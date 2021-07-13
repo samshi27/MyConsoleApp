@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0013175B-B3C5-4D35-98EA-BD34328519C3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArmstrongProject\ArmstrongProject.csproj">
+      <Project>{2354ea13-1932-45ce-b417-18be004fc102}</Project>
+      <Name>ArmstrongProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayProject\ArrayProject.csproj">
+      <Project>{460299f2-e110-4bc0-8691-732b8271e399}</Project>
+      <Name>ArrayProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FactorialProject\FactorialProject.csproj">
+      <Project>{65d93cb5-c09a-422f-9ba7-745da75fec84}</Project>
+      <Name>FactorialProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FibonacciProject\FibonacciProject.csproj">
+      <Project>{ea52010b-4649-4a12-af2d-8c89a2a48651}</Project>
+      <Name>FibonacciProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagicProject\MagicProject.csproj">
+      <Project>{eb7dbe3c-841e-4e09-b440-f7e2dd46a5d2}</Project>
+      <Name>MagicProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PalindromeProject\PalindromeProject.csproj">
+      <Project>{7f7aa246-a666-4728-991f-8cd7fc031197}</Project>
+      <Name>PalindromeProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PatternProject\PatternProject.csproj">
+      <Project>{f57d0a95-59fd-42c1-8db5-f7c790e3a6ab}</Project>
+      <Name>PatternProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerfectProject\PerfectProject.csproj">
+      <Project>{39a89c29-ff6f-4f9c-befe-ce17acfb73e9}</Project>
+      <Name>PerfectProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeProject\PrimeProject.csproj">
+      <Project>{bbddc9c7-a969-4fc6-a036-6a7cc9f09466}</Project>
+      <Name>PrimeProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReverseArrayPython\ReverseArrayProject.csproj">
+      <Project>{5cb8c3e1-7820-44cc-84c8-386159e59425}</Project>
+      <Name>ReverseArrayProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
